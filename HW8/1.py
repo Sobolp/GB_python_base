@@ -12,15 +12,15 @@ class HuffmanNode(object):
 
     def __eq__(self, other):
         if isinstance(other, HuffmanNode):
-            return 0
+            return False
         else:
-            return 1
+            return True
 
     def __lt__(self, other):
         if isinstance(other, HuffmanNode):
-            return 0
+            return False
         else:
-            return 1
+            return True
 
 
 def getTree(frequencies):
